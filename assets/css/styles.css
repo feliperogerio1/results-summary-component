@@ -1,0 +1,57 @@
+html {
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 60%;
+    height: auto;
+    display: flex;
+    text-align: center;
+}
+
+.left-card {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: blue;
+}
+
+.left-card p {
+    color: white;
+}
+
+.left-card h1 {
+    font-size: 1.2rem;
+    color: white;
+    margin: 0;
+}
+
+.circle {
+    background-color: darkblue;
+}
+
+#number_result {
+    font-size: 4rem;
+}
+
+#result {
+    font-size: 1.5rem;
+    color: white;
+}
+
+
+.right-card {
+    border-radius: 10px;
+    background-color: gray;
+}
