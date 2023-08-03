@@ -1,5 +1,11 @@
+@font-face {
+    font-family: Hanken Grotesk;
+    src: url(https://fonts.google.com/specimen/Hanken+Grotesk);
+}
+
 html {
     font-size: 18px;
+    font-family: "Hanken Grotesk", sans-serif;
     box-sizing: border-box;
 }
 
@@ -8,14 +14,19 @@ html {
 }
 
 body {
+    margin: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
 .card {
-    width: 60%;
+    width: 50%;
     height: auto;
     display: flex;
     text-align: center;
@@ -23,8 +34,8 @@ body {
 
 .left-card {
     border-radius: 10px;
-    padding: 20px;
-    background-color: blue;
+    padding: 30px;
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
 .left-card p {
@@ -38,16 +49,28 @@ body {
 }
 
 .circle {
-    background-color: darkblue;
+    background-image: linear-gradient(0deg, hsla(241, 72%, 46%, 0), hsla(256, 72%, 46%, 1));
+    border-radius: 50%;
+    width: 200px;
+    height: auto;
+    margin: 30px auto;
+    padding: 40px;
+}
+
+.circle p {
+    margin: 0;
 }
 
 #number_result {
     font-size: 4rem;
+    margin: 0;
+    font-weight: 700;
 }
 
 #result {
     font-size: 1.5rem;
     color: white;
+    font-weight: 700;
 }
 
 
