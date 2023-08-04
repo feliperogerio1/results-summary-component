@@ -21,21 +21,30 @@ body {
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
 .card {
-    width: 50%;
-    height: auto;
+    width: 100vw;
+    height: 80vh;
+    background-color: blue;
     display: flex;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .left-card {
-    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    height: 100%;
+    border-radius: 25px;
     padding: 30px;
     background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    text-align: center;
 }
 
 .left-card p {
@@ -75,6 +84,58 @@ body {
 
 
 .right-card {
+    width: 30%;
+    height: 100%;
+    padding: 30px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: red;
+}
+
+.right-card h1 {
+    height: auto;
+    font-size: 1.2rem;
+    color: #212121;
+}
+
+.bar {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
     border-radius: 10px;
-    background-color: gray;
+    background-color: hsl(241, 100%, 89%);
+    display: flex;
+}
+
+.bar p {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.classe1 {
+    color: hsl(0, 100%, 67%);
+}
+
+.classe2 {
+    color: hsl(39, 100%, 56%);
+}
+
+.classe3 {
+    color: hsl(166, 100%, 37%);
+}
+
+.classe4 {
+    color: hsl(234, 85%, 45%);
+}
+
+.button {
+    border-radius: 20px;
+    width: 100%;
+    border: none;
+    color: white;
+    text-align: center;
+    margin: 15px 0;
+    padding: 20px;
+    background-color: hsl(224, 30%, 27%);
 }
