@@ -29,6 +29,7 @@ body {
 .card {
     width: 100vw;
     height: 80vh;
+    position: relative;
     background-color: blue;
     display: flex;
     justify-content: center;
@@ -38,11 +39,14 @@ body {
 .left-card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 30%;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 1;
+    left: 24%;
+    width: 25%;
     height: 100%;
     border-radius: 25px;
-    padding: 30px;
+    padding: 3.5%;
     background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     text-align: center;
 }
@@ -62,7 +66,7 @@ body {
     border-radius: 50%;
     width: 200px;
     height: auto;
-    margin: 30px auto;
+    margin: 0px auto;
     padding: 40px;
 }
 
@@ -80,41 +84,60 @@ body {
     font-size: 1.5rem;
     color: white;
     font-weight: 700;
+    margin: 0;
 }
 
+#last-left {
+    margin: 0;
+}
 
 .right-card {
     width: 30%;
     height: 100%;
-    padding: 30px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    position: absolute;
+    right: 26%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3.5% 3.5% 3.5% 8%;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
     background-color: red;
 }
 
 .right-card h1 {
-    height: auto;
     font-size: 1.2rem;
     color: #212121;
+    margin: 0;
+}
+
+.container-bar {
+    margin: 0;
 }
 
 .bar {
     width: 100%;
-    padding: 10px;
-    margin: 10px 0;
+    padding: 15px 10px;
+    margin: 20px 0 0;
     border-radius: 10px;
     background-color: hsl(241, 100%, 89%);
     display: flex;
 }
 
+.bar img {
+    margin-right: 5px;
+}
+
 .bar p {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    margin: 0;
+    margin: 0px;
 }
 
 .classe1 {
     color: hsl(0, 100%, 67%);
+    margin: 0;
 }
 
 .classe2 {
@@ -130,12 +153,11 @@ body {
 }
 
 .button {
-    border-radius: 20px;
+    border-radius: 30px;
     width: 100%;
     border: none;
     color: white;
     text-align: center;
-    margin: 15px 0;
     padding: 20px;
     background-color: hsl(224, 30%, 27%);
 }
