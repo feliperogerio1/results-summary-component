@@ -1,7 +1,4 @@
-@font-face {
-    font-family: Hanken Grotesk;
-    src: url(https://fonts.google.com/specimen/Hanken+Grotesk);
-}
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap');
 
 html {
     font-size: 18px;
@@ -30,7 +27,6 @@ body {
     width: 100vw;
     height: 80vh;
     position: relative;
-    background-color: blue;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,22 +38,22 @@ body {
     justify-content: space-between;
     position: absolute;
     z-index: 1;
-    left: 24%;
-    width: 25%;
+    left: 21%;
+    width: 27.5%;
     height: 100%;
     border-radius: 25px;
-    padding: 3.5%;
+    padding: 3.8%;
     background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     text-align: center;
 }
 
 .left-card p {
-    color: white;
+    color: hsl(241, 100%, 89%);
 }
 
 .left-card h1 {
     font-size: 1.2rem;
-    color: white;
+    color: hsl(241, 100%, 89%);
     margin: 0;
 }
 
@@ -77,6 +73,7 @@ body {
 #number_result {
     font-size: 4rem;
     margin: 0;
+    color: white;
     font-weight: 700;
 }
 
@@ -84,7 +81,8 @@ body {
     font-size: 1.5rem;
     color: white;
     font-weight: 700;
-    margin: 0;
+    margin: 0 0 20px;
+    display: block;
 }
 
 #last-left {
@@ -92,17 +90,18 @@ body {
 }
 
 .right-card {
-    width: 30%;
+    width: 27.5%;
     height: 100%;
     position: absolute;
     right: 26%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 3.5% 3.5% 3.5% 8%;
+    padding: 3.5% 3.5% 3.5% 5%;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
-    background-color: red;
+    background-color: hsl(0, 0% 100%);
+    box-shadow: 1px 1px 15px 1px #212121;
 }
 
 .right-card h1 {
@@ -120,7 +119,7 @@ body {
     padding: 15px 10px;
     margin: 20px 0 0;
     border-radius: 10px;
-    background-color: hsl(241, 100%, 89%);
+    background-color: hsla(221, 100%, 96%, 0.6);
     display: flex;
 }
 
@@ -133,6 +132,11 @@ body {
     display: flex;
     justify-content: space-between;
     margin: 0px;
+}
+
+.negrito {
+    color: #212121;
+    font-weight: 700;
 }
 
 .classe1 {
@@ -152,12 +156,53 @@ body {
     color: hsl(234, 85%, 45%);
 }
 
+.color {
+    color: hsla(224, 30%, 27%, 0.6);
+    font-weight: 700;
+}
+
 .button {
     border-radius: 30px;
     width: 100%;
     border: none;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
     background-color: hsl(224, 30%, 27%);
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 18px;
+}
+
+.attribution {
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+.attribution a {
+    text-decoration: none;
+}
+
+@media (max-width: 375px) {
+    .card {
+        height: 100vh;
+        flex-direction: column;
+    }
+    .div-block {
+        display: block;
+    }
+    .left-card {
+        width: 100%;
+        height: auto;
+        left: 0;
+    }
+    .right-card {
+        width: 100%;
+        height: auto;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        right: 0;
+    }
+    .attribution {
+        display: none;
+    }
 }

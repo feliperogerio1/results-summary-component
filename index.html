@@ -8,12 +8,6 @@
   <link rel="stylesheet" href="./assets/css/styles.css">
   
   <title>Frontend Mentor | Results summary component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <div class="container">
@@ -24,23 +18,22 @@
           <p id="number_result">76</p>
           <p>of 100</p>
         </div>
-        <p id="result">Great</p>
-        <p id="last-left">You scored higher than 65% of the people who have taken these tests.</p>
+        <p id="last-left"><span id="result">Great</span>You scored higher than 65% of the people who have taken these tests.</p>
       </div>
       <div class="right-card"> 
         <h1>Summary</h1>
         <div class="container-bar">
           <div class="bar classe1">
-            <img src="./assets/images/icon-reaction.svg"><p>Reaction<span>80 / 100</span></p>
+            <img src="./assets/images/icon-reaction.svg"><p>Reaction<span><span class="negrito">80</span> <span class="color">/ 100</span></span></p>
           </div>
           <div class="bar classe2">
-            <img src="./assets/images/icon-memory.svg"><p>Memory<span>92 / 100</span></p>
+            <img src="./assets/images/icon-memory.svg"><p>Memory<span><span class="negrito">92</span> <span class="color">/ 100</span></span></p>
           </div>
           <div class="bar classe3">
-            <img src="./assets/images/icon-verbal.svg"><p>Verbal<span>61 / 100</span></p>
+            <img src="./assets/images/icon-verbal.svg"><p>Verbal<span><span class="negrito">61</span> <span class="color">/ 100</span></span></p>
           </div>
           <div class="bar classe4">
-            <img src="./assets/images/icon-visual.svg"><p>Visual<span>72 / 100</span></p>
+            <img src="./assets/images/icon-visual.svg"><p>Visual<span><span class="negrito">72</span> <span class="color">/ 100</span></span></p>
           </div>
         </div>
         <button class="button">Continue</button>
