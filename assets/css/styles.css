@@ -8,14 +8,12 @@ html {
 
 * {
     box-sizing: inherit;
-}
-
-body {
     margin: 0;
+    padding: 0;
 }
 
 .container {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
@@ -24,12 +22,9 @@ body {
 }
 
 .card {
-    width: 100vw;
-    height: 80vh;
+    width: 100%;
+    height: 70%;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .left-card {
@@ -39,10 +34,10 @@ body {
     position: absolute;
     z-index: 1;
     left: 21%;
-    width: 27.5%;
+    width: 28%;
     height: 100%;
     border-radius: 25px;
-    padding: 3.8%;
+    padding: 3% 5% 4%;
     background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     text-align: center;
 }
@@ -60,7 +55,7 @@ body {
 .circle {
     background-image: linear-gradient(0deg, hsla(241, 72%, 46%, 0), hsla(256, 72%, 46%, 1));
     border-radius: 50%;
-    width: 200px;
+    width: 210px;
     height: auto;
     margin: 0px auto;
     padding: 40px;
@@ -90,14 +85,14 @@ body {
 }
 
 .right-card {
-    width: 27.5%;
+    width: 28%;
     height: 100%;
     position: absolute;
     right: 26%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 3.5% 3.5% 3.5% 5%;
+    padding: 3% 3% 4% 6%;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
     background-color: hsl(0, 0% 100%);
@@ -174,7 +169,7 @@ body {
 }
 
 .attribution {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     text-align: center;
 }
 
@@ -182,27 +177,95 @@ body {
     text-decoration: none;
 }
 
-@media (max-width: 375px) {
-    .card {
-        height: 100vh;
-        flex-direction: column;
+@media (max-width: 1024px) {
+    html {
+        font-size: 15px;
     }
-    .div-block {
-        display: block;
+    .card {
+        height: 80%;
     }
     .left-card {
-        width: 100%;
+        padding: 3% 3.5% 4%;
+    }
+    .circle {
+        width: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        height: 100%;
+    }
+    .left-card {
+        display: block;
+        position: relative;
+        width: 50%;
         height: auto;
         left: 0;
+        border-radius: 0 0 25px 25px;
+        padding: 3% 7% 4%;
+        margin: 0 auto;
+    }
+    .left-card h1 {
+        margin: 0 auto 20px;
+    }
+    #result {
+        margin: 0 0 15px;
+    }
+    #last-left {
+        margin: 20px auto 0;
     }
     .right-card {
-        width: 100%;
+        display: block;
+        position: relative;
+        width: 50%;
         height: auto;
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
         right: 0;
+        bottom: 22px;
+        padding-top: 40px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 10px;
+        margin: 0 auto;
+    }
+    .right-card h1 {
+        margin: 0 auto 10px;
+        width: 80%;
+    }
+    .bar {
+        width: 80%;
+        margin: 20px auto 0;
+    }
+    .button {
+        display: block;
+        margin: 20px auto;
+        width: 80%;
     }
     .attribution {
         display: none;
+    }
+}
+
+@media (max-width: 425px) {
+    .left-card {
+        width: 100%;
+        padding: 6% 20% 7%;
+    }
+    .right-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 375px) {
+    .left-card {
+        padding: 6% 15% 7%;
+    }
+}
+
+@media (max-width: 325px) {
+    .left-card {
+        padding: 6% 10% 7%;
     }
 }
